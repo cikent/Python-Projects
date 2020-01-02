@@ -1,2 +1,2 @@
 # LPTHW
-Learn Python the Hard Way (course work)
+Course work from 'Learn Python the Hard Way' by Zed Shaw
