@@ -1,2 +1,2 @@
 # Python-Projects
-Various Projects all utilizing Python as the primary language.
+Various projects all utilizing Python as the primary language.
