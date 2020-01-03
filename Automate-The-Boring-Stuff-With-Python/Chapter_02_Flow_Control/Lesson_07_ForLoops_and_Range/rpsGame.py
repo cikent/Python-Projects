@@ -21,43 +21,43 @@ while True:  # The main game loop.
 
     # Display what the player chose:
     if playerMove == 'r':
-        print('ROCK versus...')
+        print('You chose ROCK versus...')
     elif playerMove == 'p':
-        print('PAPER versus...')
+        print('You chose PAPER versus...')
     elif playerMove == 's':
-        print('SCISSORS versus...')
+        print('You chose SCISSORS versus...')
 
     # Display what the computer chose:
     randomNumber = random.randint(1, 3)
     if randomNumber == 1:
         computerMove = 'r'
-        print('ROCK')
+        print('The Computer chose ROCK')
     elif randomNumber == 2:
         computerMove = 'p'
-        print('PAPER')
+        print('The Computer chose PAPER')
     elif randomNumber == 3:
         computerMove = 's'
-        print('SCISSORS')
+        print('The Computer chose SCISSORS')
 
     # Display and record the win/loss/tie:
     if playerMove == computerMove:
         print('It is a tie!')
         ties = ties + 1
     elif playerMove == 'r' and computerMove == 's':
-        print('You win!')
+        print('Congrats, you win!')
         wins = wins + 1
     elif playerMove == 'p' and computerMove == 'r':
-        print('You win!')
+        print('Congrats, you win!')
         wins = wins + 1
     elif playerMove == 's' and computerMove == 'p':
-        print('You win!')
+        print('Congrats, you win!')
         wins = wins + 1
     elif playerMove == 'r' and computerMove == 'p':
-        print('You lose!')
+        print('Sorry, you lose!')
         losses = losses + 1
     elif playerMove == 'p' and computerMove == 's':
-        print('You lose!')
+        print('Sorry, you lose!')
         losses = losses + 1
     elif playerMove == 's' and computerMove == 'r':
-        print('You lose!')
+        print('Sorry, you lose!')
         losses = losses + 1
