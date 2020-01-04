@@ -8,3 +8,4 @@ def hello():
 # run the function 3 times
 hello()
 hello()
+hello()
