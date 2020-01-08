@@ -1,4 +1,4 @@
-# define a function
+# define a basic function
 def hello():
     print('Howdy!')
     print('Howdy!!!')
@@ -6,5 +6,6 @@ def hello():
 
 
 # run the function 3 times
+hello()
 hello()
 hello()
