@@ -26,10 +26,13 @@ def getAnswer(answerNumber):
 
 
 # declare a integer variable randomly between 1 to 9 each time the program is called
-r = random.randint(1, 9)
+# r = random.randint(1, 9)
 
 # create a new String variable based upon the Random # and the getAnswer function
-fortune = getAnswer(r)
+# fortune = getAnswer(r)
 
 # print the fortune variable
-print(fortune)
+# print(fortune)
+
+# combining the 3 expressions from line 28 to 35 into a single expression
+print(getAnswer(random.randint(1, 9)))
