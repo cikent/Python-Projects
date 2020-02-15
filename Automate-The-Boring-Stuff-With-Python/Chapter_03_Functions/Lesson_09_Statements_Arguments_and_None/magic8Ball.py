@@ -2,8 +2,6 @@
 import random
 
 # define a Magic 8 Ball function
-
-
 def getAnswer(answerNumber):
     if answerNumber == 1:
         return 'It is certain'
@@ -23,7 +21,6 @@ def getAnswer(answerNumber):
         return 'Outlook not so good'
     elif answerNumber == 9:
         return 'Very doubtful'
-
 
 # declare a integer variable randomly between 1 to 9 each time the program is called
 # r = random.randint(1, 9)
