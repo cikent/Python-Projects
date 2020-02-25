@@ -1,11 +1,12 @@
 # define the Collatz Sequence
-def collatz(number):
-    if number % 2 == 0:
-        print(number // 2)
-        return number
+def collatz(collatzNumber):
+    # todo while collatzNumber > 1:
+    if collatzNumber % 2 == 0:
+        print(collatzNumber // 2)
+        return collatzNumber
     else:
-        print((3 * number) + 1)
-        return (3 * number) + 1
+        print((3 * collatzNumber) + 1)
+        return (3 * collatzNumber) + 1
 
 
 # Ask User to define a #
@@ -20,6 +21,9 @@ def askUserForNumber():
             print("That was not a valid Number, please try again.")
 
 
-# todo
-collatz(askUserForNumber())
+# run askUserForNumber
+collatzNumber = askUserForNumber()
 
+# todo (fix the looping issue)
+while collatzNumber > 1:
+    collatz(collatzNumber)
