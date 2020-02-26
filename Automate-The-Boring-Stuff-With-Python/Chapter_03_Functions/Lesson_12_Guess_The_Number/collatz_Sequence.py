@@ -1,12 +1,11 @@
 # define the Collatz Sequence
-def collatz(collatzNumber):
-    # todo while collatzNumber > 1:
-    if collatzNumber % 2 == 0:
-        print(collatzNumber // 2)
-        return collatzNumber
+def collatz(number):
+    if number % 2 == 0:
+        print(number // 2)
+        return number
     else:
-        print((3 * collatzNumber) + 1)
-        return (3 * collatzNumber) + 1
+        print((3 * number) + 1)
+        return (3 * number) + 1
 
 
 # Ask User to define a #
@@ -14,16 +13,18 @@ def askUserForNumber():
     while True:
         try:
             # continue to ask this question until User provides a valid #
-            userNumber = int(input("Please input any number: "))
+            userNumber = int(input("Please input any whole number: "))
+            # return userNumber
             return userNumber
         except ValueError:
             # prompt User they inputted a non-valid value, ask them to try again
-            print("That was not a valid Number, please try again.")
+            print("That was not a whole number, please try again.")
 
 
-# run askUserForNumber
+# declare a variable and set it to the value of askUserForNumber()
 collatzNumber = askUserForNumber()
 
-# todo (fix the looping issue)
-while collatzNumber > 1:
-    collatz(collatzNumber)
+# execute while Collatz Number != 1
+while collatzNumber != 1:
+    collatzNumber = collatz(collatzNumber)
+
