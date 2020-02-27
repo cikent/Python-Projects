@@ -1,8 +1,8 @@
 # define the Collatz Sequence
 def collatz(number):
-    if number % 2 == 0:
-        print(number // 2)
-        return number
+    if number % 2 == 0:             # if # is even
+        print(number // 2)          # print 
+        return number // 2
     else:
         print((3 * number) + 1)
         return (3 * number) + 1
