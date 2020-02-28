@@ -54,23 +54,6 @@ def	# define	defines a function in a script
 return	# return	returns something to the console from within a funciton		
 [ ]	# brackets	for containing lists	fruit = ['apples', 'oranges', bananas'] coins = [1, 5, 10, 25]
 
-# =============================
-# Things to Research:
-# =============================
-# Errors
-# Hexidecimal
-# Port
-# TCP
-# UDP
-# Hypertext
-
-# =============================
-# ++ Study Drills ++
-# =============================
-# 1. Go back through and write a comment on what each line does.
-# 2. Read each one backward or out loud to find your errors.
-# 3. Annotate mistakes & avoid them in the future
-# 4. Plus whatever the specific Lesson entails
 
 # =============================
 #  Pydoc Module Commands:
@@ -79,21 +62,7 @@ return	# return	returns something to the console from within a funciton
 # -n <keyword> | Argument: Start an HTTP server with the given hostname <keyword>
 # -p <keyword> | Argument: Start an HTTP server with the given port on the local machine. <keyword>
 
-# =============================
-# Mistakes
-# =============================
-# mistakes = {
-# 	1st = Not remembering how to write an F-string
-# 	2nd = Forgetting that Print Commands always end with the newline (\n) parameter unless otherwise specified
-# 	3rd = Using repr to print out variables Example: print(">>>> object=", repr(object))
-#	4th = Using Pydoc to read a command's description. Example: python -m pydoc <command>
-#	5th = Trying to use Python via Powershell w/o 1st navigating to the Directory containing desired files
-#	6th = Trying to print a fileObject before closing it
-#	7th = Declaring Variables explicitly by Type
-#	8th = False and False == False, not True
-#	9th = Declared a variable to be assigned a User's input valut, but failed to write input before ("> ")
-# }
- 
+
 # ++ Things to Remember ++
 # =============================
 # Function Checklist:
