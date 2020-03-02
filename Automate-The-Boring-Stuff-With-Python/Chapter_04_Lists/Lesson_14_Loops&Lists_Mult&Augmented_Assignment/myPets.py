@@ -1,12 +1,12 @@
 # Create a list of Pets
-myPets = ['Nymeria', 'Gunner', 'Bones', 'Fishe!', 'Ashe']
+myPets = ["Nymeria", "Gunner", "Bones", "Fishe!", "Ashe"]
 
 # Ask the User to provide a Pet name
-print('Please enter a pet name: ')
+print("Please enter a pet name: ")
 # Store the input inside a String variable
 name = str(input())
 # Detemine if the name matches one already in the list
 if name not in myPets:
-    print('I do not have a pet named ' + name)
+    print("I do not have a pet named " + name)
 else:
-    print('Great guess, ' + name + ' is one of my pets!')
+    print("Great guess, " + name + " is one of my pets!")
