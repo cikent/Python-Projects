@@ -16,6 +16,8 @@ def mergeList(anyList):
     # For each word in the List, add it to mergeWords
     for item in anyList:
         # todo
+        # if item != anyList[-1]: continue else: mergeWords += str(', and ' + item)
+        # 
         mergeWords += str(item + ', ')
         # mergeWords = mergeWords + str(anyList[len(anyList)])      # Comment out for debugging
     
