@@ -12,8 +12,8 @@ Requirements:
 Source: https://automatetheboringstuff.com/chapter4/ -> search for Character Picture Grid
 """
 
-# Define a List
-grid = [['.', '.', '.', '.', '.', '.'],
+# Define grid: A List that contains Lists
+heartGrid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['O', 'O', 'O', 'O', '.', '.'],
         ['O', 'O', 'O', 'O', 'O', '.'],
@@ -24,13 +24,17 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
 # Debug initial print of grid
-print(str(grid))
+print(str(heartGrid))
 
 # Define String variables to hold the grid
-gridRow = len(grid)
-gridColumn = len(grid[0])
+# gridRow = len(heartGrid)                   # gridRow == grid's len which is the Index # in the Parent List
+# gridColumn = len(heartGrid[gridRow])       # gridColumn == grid's 
 
 # Define a function to print the Grid
 def printGrid(gridList):
-        # Iterate through List(s)
-        for x in grid[x][y]:
+    # Iterate through List(s)
+    for x in range(len(gridList)):
+            for y in range(len(gridList[y])):
+                print(gridList[x][y], end='')
+
+printGrid(heartGrid)
