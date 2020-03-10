@@ -36,5 +36,6 @@ def printGrid(gridList):
     for x in range(gridColumn):
             for y in range(gridRow):
                 print(gridList[y][x], end='')
+            print()
 
 printGrid(heartGrid)
