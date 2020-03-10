@@ -24,18 +24,27 @@ heartGrid = [['.', '.', '.', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
 # Debug initial print of grid
-print(str(heartGrid))
+# print(str(heartGrid))
 
 # Define String variables to hold the grid
-gridRow = len(heartGrid)                   # gridRow == grid's len which is the Index # in the Parent List
-gridColumn = len(heartGrid[0])             # gridColumn == grid's 
+gridRow = len(heartGrid)                   # gridRow == heartGrid's # of Indecies in the Parent List Reference
+gridColumn = len(heartGrid[0])             # gridColumn == heartGrid's # of Indecies in the Child List Reference
 
-# Define a function to print the Grid
-def printGrid(gridList):
-    # Iterate through List(s)
+# Define a function to print the Grid v1
+def printGridv1(gridList):
+    # Iterate through Row List(s) 1st
+    for x in range(gridRow):
+            print()
+            for y in range(gridColumn):
+                print(gridList[x][y], end='')
+
+# Define a function to print the Grid v2
+def printGridv2(gridList):
+    # Iterate through Column List(s) 1st
     for y in range(gridColumn):
             for x in range(gridRow):
                 print(gridList[x][y], end='')
             print()
 
-printGrid(heartGrid)
+# printGridv1(heartGrid)
+printGridv2(heartGrid)
