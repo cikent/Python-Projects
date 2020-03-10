@@ -27,8 +27,8 @@ heartGrid = [['.', '.', '.', '.', '.', '.'],
 # print(str(heartGrid))
 
 # Define String variables to hold the grid
-gridRow = len(heartGrid)                   # gridRow == heartGrid's # of Indecies in the Parent List Reference
-gridColumn = len(heartGrid[0])             # gridColumn == heartGrid's # of Indecies in the Child List Reference
+gridRow = len(heartGrid)                   # gridRow == heartGrid's # of Indices in the Parent List Reference
+gridColumn = len(heartGrid[0])             # gridColumn == heartGrid's # of Indices in the Child List Reference
 
 # Define a function to print the Grid v1
 def printGridv1(gridList):
