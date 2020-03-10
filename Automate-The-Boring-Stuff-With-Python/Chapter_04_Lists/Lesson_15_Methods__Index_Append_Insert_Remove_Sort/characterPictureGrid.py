@@ -33,8 +33,8 @@ print(str(heartGrid))
 # Define a function to print the Grid
 def printGrid(gridList):
     # Iterate through List(s)
-    for x in range(len(gridList)):
-            for y in range(len(gridList[y])):
+    for x in gridList[0]:
+            for y in gridList[y]:
                 print(gridList[x][y], end='')
 
 printGrid(heartGrid)
