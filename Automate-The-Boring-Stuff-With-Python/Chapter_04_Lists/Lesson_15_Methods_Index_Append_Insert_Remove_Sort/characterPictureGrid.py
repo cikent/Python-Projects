@@ -33,9 +33,9 @@ gridColumn = len(heartGrid[0])             # gridColumn == grid's
 # Define a function to print the Grid
 def printGrid(gridList):
     # Iterate through List(s)
-    for x in range(gridColumn):
-            for y in range(gridRow):
-                print(gridList[y][x], end='')
+    for y in range(gridColumn):
+            for x in range(gridRow):
+                print(gridList[x][y], end='')
             print()
 
 printGrid(heartGrid)
