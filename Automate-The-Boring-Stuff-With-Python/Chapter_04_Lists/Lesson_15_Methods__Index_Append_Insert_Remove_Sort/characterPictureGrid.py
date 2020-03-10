@@ -27,14 +27,14 @@ heartGrid = [['.', '.', '.', '.', '.', '.'],
 print(str(heartGrid))
 
 # Define String variables to hold the grid
-# gridRow = len(heartGrid)                   # gridRow == grid's len which is the Index # in the Parent List
-# gridColumn = len(heartGrid[gridRow])       # gridColumn == grid's 
+gridRow = len(heartGrid)                   # gridRow == grid's len which is the Index # in the Parent List
+gridColumn = len(heartGrid[0])             # gridColumn == grid's 
 
 # Define a function to print the Grid
 def printGrid(gridList):
     # Iterate through List(s)
-    for x in gridList[0]:
-            for y in gridList[y]:
-                print(gridList[x][y], end='')
+    for x in range(gridColumn):
+            for y in range(gridRow):
+                print(gridList[y][x], end='')
 
 printGrid(heartGrid)
