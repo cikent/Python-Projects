@@ -27,24 +27,19 @@ heartGrid = [['.', '.', '.', '.', '.', '.'],
 # print(str(heartGrid))
 
 # Define String variables to hold the grid
-gridRow = len(heartGrid)                   # gridRow == heartGrid's # of Indices in the Parent List Reference
-gridColumn = len(heartGrid[0])             # gridColumn == heartGrid's # of Indices in the Child List Reference
-
-# Define a function to print the Grid v1
-def printGridv1(gridList):
-    # Iterate through Row List(s) 1st
-    for x in range(gridRow):
-            print()
-            for y in range(gridColumn):
-                print(gridList[x][y], end='')
+gridRow = len(heartGrid)                   # gridRow == The # of Indices in heartGrid's Parent List Reference
+gridColumn = len(heartGrid[0])             # gridColumn == The # of Indices in one of heartGrid's nested List's
 
 # Define a function to print the Grid v2
-def printGridv2(gridList):
-    # Iterate through Column List(s) 1st
+def printGrid(gridList):
+    # Iterate through Columns 1st
     for y in range(gridColumn):
+            # Then iterate through Rows 2nd
             for x in range(gridRow):
+                # Print the present X and Y Index values
                 print(gridList[x][y], end='')
+            # Print a New Line after each Column has been Printed
             print()
 
-# printGridv1(heartGrid)
-printGridv2(heartGrid)
+# Print heartGrid using the printGrid function
+printGrid(heartGrid)
