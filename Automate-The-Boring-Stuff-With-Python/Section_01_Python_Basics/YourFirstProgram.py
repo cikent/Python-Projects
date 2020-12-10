@@ -15,5 +15,5 @@ print('Your name is ' + str(len(userName)) + ' characters long!')
 print('What is your age?')
 userAge = input()
 
-# print User's Age 1 year from now
+# Print the user's Age 1 year from now
 print('You will be ' + str(int(userAge) + 1) + ' in a year.')
