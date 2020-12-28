@@ -1,4 +1,4 @@
-# import sys module
+# Import the sys module
 import sys
 
 while True:
