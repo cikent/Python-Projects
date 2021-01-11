@@ -1,4 +1,4 @@
-# import the random module/library
+# Import the random module/library
 import random
 
 # define a Magic 8 Ball function
