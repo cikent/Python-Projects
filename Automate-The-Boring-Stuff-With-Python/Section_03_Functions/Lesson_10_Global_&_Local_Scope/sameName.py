@@ -20,4 +20,3 @@ eggs = "global"
 # call bacon
 bacon()
 print(eggs)  # prints 'global'
-
