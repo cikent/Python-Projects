@@ -16,7 +16,7 @@ def bacon():
 
 
 # Set eggs to a Global String
-eggs = "global"
-# call bacon
+eggs = "eggs global"
+# Call the function bacon()
 bacon()
-print(eggs)  # prints 'global'
+print(eggs)  # prints 'eggs global'
