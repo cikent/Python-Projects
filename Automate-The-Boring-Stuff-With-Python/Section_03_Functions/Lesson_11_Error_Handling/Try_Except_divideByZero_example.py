@@ -1,0 +1,16 @@
+# Define div42by
+def div42by(divideBy):
+    while True:
+        try:
+            return 42 / divideBy
+        except ZeroDivisionError:
+            # Updated the Exception to be in scope of a 'while clause' and ask user to provide new value before trying again
+            divideBy = int(input("Error: Invalid argument. Please input another #: "))
+            continue
+
+
+print(div42by(2))
+print(div42by(12))
+print(div42by(0))                      # ERROR! -- this should cause and exception
+print(div42by(1))
+print(div42by(7))
