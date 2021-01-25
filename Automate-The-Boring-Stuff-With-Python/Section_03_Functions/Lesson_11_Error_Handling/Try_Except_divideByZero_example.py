@@ -5,8 +5,10 @@ def div42by(divideBy):
             return 42 / divideBy
         except ZeroDivisionError:
             # Updated the Exception to be in scope of a 'while clause' and ask user to provide new value before trying again
-            divideBy = int(input("Error: Invalid argument. Please input another #: "))
+            divideBy = int(input("Error: Invalid argument. Please input another # that is not zero: "))
             continue
+        except:
+            print("There was an unknown error, please try again.")
 
 
 print(div42by(2))

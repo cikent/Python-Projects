@@ -4,7 +4,7 @@ def collatz(number):
     if number % 2 == 0:            
         print(number // 2)          
         return number // 2
-    # If not even, it must be ddd
+    # If not even, it must be odd
     else:
         print((3 * number) + 1)
         return (3 * number) + 1
