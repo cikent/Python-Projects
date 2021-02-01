@@ -1,7 +1,7 @@
 # Extra Credit: Create another Error to indicate when the User has inputted a negative number
 
 print('How many cats do you have?')
-numCats = input()
+numCats = validateUserInteger()
 
 try:
     if type(numCats) is int:
@@ -16,3 +16,14 @@ try:
 except ValueError:
     print('You did not enter a number.')
     
+
+def validateUserInteger:
+    while True:
+        try:
+            if numCats = type(int):
+                True
+            else:
+                False
+        except:
+            print('Hello World')
+
