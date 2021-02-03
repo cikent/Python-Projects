@@ -1,24 +1,20 @@
 # Extra Credit: Create another Error to indicate when the User has inputted a negative number
-def validateUserInteger():
-    global numCats
-
+def validateUserInteger(userVar):
     try:
-        if numCats = int(numCats):
+        if userVar is type(int):
             continue
     except ValueError:
         print('You did not enter a number.')
-        validateUserInteger()
         try:
-            if int(numCats) >= 0:
+            if int(userVar) >= 0:
                 continue
         except:
-                print('You did not enter a positive number.')
-                validateUserInteger()
+            print('You did not enter a positive number.')
 
 
 print('How many cats do you have?')
 numCats = input()
-validateUserInteger()
+validateUserInteger(numCats)
 
 if int(numCats) >= 4:
     print('That is a lot of cats.')
