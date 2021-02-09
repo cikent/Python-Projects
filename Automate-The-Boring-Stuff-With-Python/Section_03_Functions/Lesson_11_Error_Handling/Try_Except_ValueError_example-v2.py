@@ -1,13 +1,13 @@
 # Extra Credit: Create another Error to indicate when the User has inputted a negative number
 def validateUserInteger(userVar):
     try:
-        if userVar is type(int):
-            continue
+        if type(userVar) == "<class 'str'>":
+            pass
     except ValueError:
         print('You did not enter a number.')
         try:
             if int(userVar) >= 0:
-                continue
+                pass
         except:
             print('You did not enter a positive number.')
 
