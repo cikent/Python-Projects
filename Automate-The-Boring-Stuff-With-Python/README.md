@@ -6,5 +6,4 @@ Course work from Automate The Boring Stuff With Python by Al Sweigart
 * Udemy Course: https://www.udemy.com/course/automate/
 
 ## TODO:
-* Contents in Chapter 5
-    * Source: https://automatetheboringstuff.com/chapter5/
+* Section 4, Lesson 11, finish: Try_Except_ValueError_example-v2.py for extra credit
