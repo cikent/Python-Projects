@@ -4,6 +4,7 @@ def eggs(someParameter):
 
 # Declare a list named spam
 spam = [1, 2, 3]
+
 # Run Eggs and pass spam as the argument
 eggs(spam)
 

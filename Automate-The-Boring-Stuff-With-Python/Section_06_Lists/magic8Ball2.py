@@ -1,4 +1,4 @@
-# import the Library: random
+# Import the Library: random
 import random
 
 # Declare a list of messages

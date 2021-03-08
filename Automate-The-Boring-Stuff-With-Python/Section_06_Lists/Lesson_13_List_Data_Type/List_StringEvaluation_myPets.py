@@ -1,5 +1,5 @@
 # Create a list of Pets
-myPets = ["Nymeria", "Gunner", "Bones", "Fishe!", "Ashe"]
+myPets = ["Bones", "Gunner", "Nymeria", "Dina"]
 
 # Ask the User to provide a Pet name
 print("Please enter a pet name: ")

@@ -3,8 +3,10 @@ birthdays = {'Nicole': 'May 20', 'Kaleb': 'Jan 10', 'Chris': 'Jul 15'}
 
 # Execute continuously until User enters nothing and the script exits
 while True:
+    
     # Ask the User to input a Name
     print('Enter a name: (blank to quit)')
+    
     # Try clause to ensure the User inputs a valid entry
     try:
         # Save the User's input

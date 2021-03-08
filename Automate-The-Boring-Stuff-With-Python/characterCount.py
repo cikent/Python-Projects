@@ -1,5 +1,6 @@
 # Define a String
 message = 'It was a bright cold day in April, and the clocks were stricking thirteen.'
+
 # Define a empty Dictionary
 count = {}
 
