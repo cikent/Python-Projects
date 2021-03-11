@@ -14,4 +14,3 @@ messages = ['It is certain',
 
 # Print a random value from the list ranging between 0 and 8 (9 Total)
 print(messages[random.randint(0, len(messages) - 1)])
-
