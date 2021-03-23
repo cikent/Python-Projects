@@ -12,10 +12,10 @@ eggs(spam)
 print(spam)
 
 """ someInt = 13
-eggs(someInt)                   # Will throw Error because Integer Objects cannot be appended
+eggs(someInt)                   # Will throw Error because Integer objects cannot be appended
 print(someInt)
 
 someString = 'This is a string'
-eggs(someString)                # Will throw Error because String Objects cannot be appended
+eggs(someString)                # Will throw Error because String objects cannot be appended
 print(someString) """
 
