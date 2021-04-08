@@ -7,4 +7,4 @@ Course work from Automate The Boring Stuff With Python by Al Sweigart
 
 ## TODO:
 * Section 4, Lesson 11, finish: Try_Except_ValueError_example-v2.py for extra credit
-* Continue with: Augmented Assignment Operators & Link: https://automatetheboringstuff.com/2e/chapter4/#calibre_link-167
+* Continue with: Adding Values to Lists with the append() and insert() Methods - https://automatetheboringstuff.com/2e/chapter4/#calibre_link-170
