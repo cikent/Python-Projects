@@ -9,3 +9,11 @@ print('The sort() method returns the list in ascending order: \n' + str(diablo3C
 # Reverse Sort the List
 diablo3Classes.sort(reverse=True)
 print('The sort(reverse=True) method returns the list in descending order: \n' + str(diablo3Classes))
+
+# Declare a new List value
+diablo3_diablo2Classes = ['paladin', 'sorceress', 'amazon', 'necromancer', 'assassin', 'barbarian', 'druid', 'Witch Doctor', 'Demon Hunter', 'Monk', 'Wizard', 'Necromancer', 'Crusader', 'Barbarian']
+print('Print the new list: \n' + str(diablo3_diablo2Classes))
+
+# Sort the List in actual alphabetical order
+diablo3_diablo2Classes.sort(key=(str.lower))
+print('The sort(str.lower) method returns the list in alphabetical order: \n' + str(diablo3_diablo2Classes))
