@@ -15,5 +15,5 @@ diablo3_diablo2Classes = ['paladin', 'sorceress', 'amazon', 'necromancer', 'assa
 print('Print the new list: \n' + str(diablo3_diablo2Classes))
 
 # Sort the List in actual alphabetical order
-diablo3_diablo2Classes.sort(key=(str.lower))
-print('The sort(str.lower) method returns the list in alphabetical order: \n' + str(diablo3_diablo2Classes))
+diablo3_diablo2Classes.sort(key=str.lower)
+print('The sort(key=str.lower) method returns the list in alphabetical order: \n' + str(diablo3_diablo2Classes))
