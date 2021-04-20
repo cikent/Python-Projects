@@ -6,5 +6,7 @@ Course work from Automate The Boring Stuff With Python by Al Sweigart
 * Udemy Course: https://www.udemy.com/course/automate/
 
 ## TODO:
-* Section 4, Lesson 11, finish: Try_Except_ValueError_example-v2.py for extra credit
 * Continue with: Sorting the Values in a List with the sort() Method - https://automatetheboringstuff.com/2e/chapter4/#calibre_link-172
+
+## Extra Credit:
+* Section 4, Lesson 11, finish: Try_Except_ValueError_example-v2.py for extra credit
