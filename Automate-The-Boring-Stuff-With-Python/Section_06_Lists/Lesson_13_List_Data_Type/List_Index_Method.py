@@ -11,7 +11,7 @@ print('Debug: Print to console, the Index value for Gunner: ' + str(myPets.index
 
 """
 When there are duplicates of the value in the list, the index of its first appearance is returned. 
-Enter the following into the interactive shell, and notice that index() returns 1, not 3:
+Enter the following into the interactive shell, and notice that index() returns 2, not 4:
 """
 # Create a 2nd List for my pets
 myPets2 = ['Bones', 'Gunner', 'Nymeria', 'Dina', 'Nymeria']

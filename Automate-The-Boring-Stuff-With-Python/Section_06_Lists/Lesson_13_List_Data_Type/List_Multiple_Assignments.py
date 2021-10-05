@@ -2,7 +2,7 @@
 diablo2 = ['Shako', 'Anni Small Charm', 'Enigma Armor']
 
 # Print the value to console
-print(diablo2)
+print(diablo2)  # This list can be printed without str() because the List values are Strings
 
 # Tuple Unpack the List value and assign the Index values to new Variables
 druid, sorceress, paladin = diablo2
