@@ -1,6 +1,6 @@
 # Define spam
 def spam():
-    # Call the print function an reference the Global variable
+    # Call the print function and pass in the Global variable
     print(eggs)
 
 
