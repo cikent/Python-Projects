@@ -9,8 +9,13 @@ Course work from Automate The Boring Stuff With Python by Al Sweigart
 
 ## TODO
 
+<<<<<<< HEAD
 * Online Course: This List Data Type: <https://www.udemy.com/course/automate/learn/lecture/3465838#learning-tools>
 * Online Book -> Sorting the Values in a List with the sort() Method: <https://automatetheboringstuff.com/2e/chapter4/#calibre_link-172>
+=======
+* Online Course: This List Data Type - https://www.udemy.com/course/automate/learn/lecture/3465838#overview
+* Online Book -> Sorting the Values in a List with the sort() Method - https://automatetheboringstuff.com/2e/chapter4/#calibre_link-172
+>>>>>>> a8f7f51f639eaba779a28ce35a1b18667a474acd
 
 ## Extra Credit
 
