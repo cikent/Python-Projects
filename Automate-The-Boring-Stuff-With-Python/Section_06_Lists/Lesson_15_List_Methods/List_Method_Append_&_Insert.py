@@ -1,3 +1,9 @@
+"""
+Description: Methods belong to a single data type. The append() and insert() methods are list methods
+ and can be called only on list values, not on other values such as strings or integers.
+Source: https://automatetheboringstuff.com/2e/chapter4/#calibre_link-172
+"""
+
 # Declare a List variable
 d2TPActiveUser = ['Athar', 'Drahgo', 'Xena']
 print('Print the initial list: \n' + str(d2TPActiveUser))
