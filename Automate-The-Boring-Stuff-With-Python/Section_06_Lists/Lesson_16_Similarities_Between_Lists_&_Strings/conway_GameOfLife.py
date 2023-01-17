@@ -19,3 +19,19 @@ for x in range(WIDTH):
 while True: # Main program loop.
     print('\n\n\n\n\n') # Seperate each step with newlines.
     currentCells = copy.deepcopy(nextCells)
+
+    # Print currentcells on the screen:
+    for y in range(HEIGHT):
+        for x in range(WIDTH):
+            print(currentCells[x][y], end=") # Print the # of space.
+        print() # Print a newline at the end of the row.
+
+    # Calculate the next step's cells based on current step's cells:
+    for x in range(WIDTH):
+        for y in range(HEIGHT):
+            # Get neighboring coordinates:
+            # '% WIDTH' ensures leftCoord is always between 0 and WIDTH -1
+            leftCoord = (x - 1) % WIDTH
+            rightCoord = (x + 1) % WIDTH
+            aboveCoord = (y - 1) % HEIGHT
+            belowCoord = (y + 1) % HEIGHT
