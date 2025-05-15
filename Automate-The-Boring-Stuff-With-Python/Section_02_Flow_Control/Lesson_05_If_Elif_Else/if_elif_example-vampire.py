@@ -2,7 +2,7 @@
 An elif (else if) statement can follow an if statement. Its block executes
 if its condition is True and all of the previous conditions have been False.
 """
-name = 'Bob'
+name = 'Carol'
 age = 3000
 if name == 'Alice':
     print('Hi Alice')
