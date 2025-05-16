@@ -20,7 +20,7 @@ def askUserForNumber():
             return userNumber
         except ValueError:
             # Inform the User that they inputted a non-valid value. Then ask them to try again.
-            print("That was not a whole number, please try again: ")
+            print("That was not a whole number (Integer), please try again: ")
 
 
 # Save the User's chosen number as the Collatz value
@@ -30,4 +30,3 @@ collatzNumber = askUserForNumber()
 while collatzNumber != 1:
     # Update collatzNumber with the collatz() Function/Method's return value
     collatzNumber = collatz(collatzNumber)
-
