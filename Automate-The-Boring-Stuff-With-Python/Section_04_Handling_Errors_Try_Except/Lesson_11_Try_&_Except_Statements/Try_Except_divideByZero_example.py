@@ -13,6 +13,6 @@ def div42by(divideBy):
 
 print(div42by(2))
 print(div42by(12))
-print(div42by(0))                      # ERROR! -- this should cause and exception
+print(div42by(0))                      # ERROR! --This will cause the exception
 print(div42by(1))
 print(div42by(7))
