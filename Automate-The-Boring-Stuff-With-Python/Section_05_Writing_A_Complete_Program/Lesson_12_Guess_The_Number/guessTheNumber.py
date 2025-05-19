@@ -7,7 +7,7 @@ print('Hello. What is your name?')
 name = input()
 
 # Prompt the User to make a guess.
-print('Well, ' + name + 'I am thinking of a number between 1 and 20. Can you guess what it is?')
+print('Well, ' + name + ', I\'m thinking of a number between 1 and 20. Can you guess what it is?')
 
 # Declare an Integer and set it to a random value between 1 and 20
 secretNumber = random.randint(1, 20)
