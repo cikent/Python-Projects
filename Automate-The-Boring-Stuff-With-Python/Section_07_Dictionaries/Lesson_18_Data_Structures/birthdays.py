@@ -1,5 +1,5 @@
 # Define a Dictionary to save the Birthday's of family
-birthdays = {'Nicole': 'May 20', 'Kaleb': 'Jan 10', 'Chris': 'Jul 15'}
+birthdays = {'Kaleb': 'Jan 10th', 'Nicole': 'May 20th', 'Ivy': 'May 27th', 'Chris': 'Jul 15th'}
 
 # Execute continuously until User enters nothing and the script exits
 while True:
