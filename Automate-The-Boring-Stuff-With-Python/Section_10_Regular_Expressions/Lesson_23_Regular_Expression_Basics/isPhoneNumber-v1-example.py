@@ -29,3 +29,18 @@ print(isPhoneNumber('hello'))           # False example
 print(isPhoneNumber('4155551234'))      # False example
 print(isPhoneNumber('abc-def-hijk'))    # False example
 print(isPhoneNumber('415-555-1234'))    # True example
+
+# Parse a String Message to determine if it contains valid Phone numbers within
+message = 'Call me at 415-555-1011 tomorrow, or at 415-555-9999 for my office line.'
+
+foundNumber = False
+
+for i in range(len(message)):
+  chunk = message[i:i+12]
+  if isPhoneNumber(chunk):
+          print('Phone number found: ' + chunk)
+          foundNumber = True        # Set the boolean variable to True IF a valid Phone number is detected in the string
+if not foundNumber:
+    print('Could not find any phone numbers')
+    
+print('Done')
