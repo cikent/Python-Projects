@@ -3,7 +3,7 @@
 # Import the re module first
 # Call the re.compile() function to create a regex object.
 # Call the regex object's search() method to create a match object.
-# Call the match object's group() method to get the matchd string.
+# Call the match object's group() method to get the matched string.
 # \d is the regex for a numeric digit character.
 
 # Import the re Module, which contains: All the regex functions in Python are in the re module.
