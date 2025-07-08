@@ -13,5 +13,5 @@ import re
 # Declare a variable representing a regex text pattern we're searching for (i.e. a phone number)
 phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
-# Utilize the regex expression findall() to return a List of all String matching the defined regex pattern
+# Utilize the regex expression findall() to return a List of all Strings matching the defined regex pattern
 print(phoneNumRegex.findall('Call me at 415-555-1011 tomorrow, or at 415-555-9999 for my office line.'))
