@@ -16,9 +16,8 @@ exampleStringWithBatReferences = 'Batman\'s Batmobile lost a wheel when it dropp
 # Create a Match Object Tuple List based upon all batRegex values identified
 batRegexList = batRegex.findall(exampleStringWithBatReferences)
 
-# # Utilize the regex expression search method to create a new Match Object variable IF a pattern match is found
-# matchObject1 = batRegex.search(exampleStringWithBatReferences)
-
 # Print to screen the Regex Match Object Group values, then entire Group, and each distinct index value
+print('Print to screen the Regex String varianble utilized to search against for Match Object Group values: ', end='\n')
+print(str(exampleStringWithBatReferences), end='\n')
 print('Print to screen the Regex Match Object Group values. Any references from the string that include \'Bat\':', end='\n')
 print('The mo.object() value is: ' + str(batRegexList))
