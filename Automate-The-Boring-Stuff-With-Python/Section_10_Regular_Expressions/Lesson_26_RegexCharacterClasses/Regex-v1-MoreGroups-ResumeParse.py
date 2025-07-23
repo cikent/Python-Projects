@@ -9,11 +9,11 @@
 # import the Regex modole
 import re
 
-# Create a Regex Pattern Matching Object
+# Create a Regex Pattern Matching Object with No Groups
 phoneRegex_NoGroups = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
-# Create a Regex Pattern Matching Object
-phoneRegex_WithGroups = re.compile(r'((\d\d\d)-(\d\d\d-\d\d\d\d))')
+# Create a Regex Pattern Matching Object with 3 Groups
+phoneRegex_With3Groups = re.compile(r'((\d\d\d)-(\d\d\d-\d\d\d\d))')
 
 # Create a String Variable based upon a sample Resume (https://www.linkedin.com/jobs/collections/recommended/?currentJobId=4262459768)
 resumeExample1 = '''
@@ -64,7 +64,10 @@ Equal Employment Opportunity at Machinify
 Machinify is committed to hiring talented and qualified individuals with diverse backgrounds for all of its positions. Machinify believes that the gathering and celebration of unique backgrounds, qualities, and cultures enriches the workplace.'''
 
 # Utilize re.search() to return the 1st Regex Pattern match identified
-phoneRegex.search(resumeExample1)
+phoneRegex_With3Groups.search(resumeExample1)
 
-# Utilize re.findall() to return a List of all the matches 
-phoneRegex.findall(resumeExample1)
+# Utilize re.findall() to return a List of all the matches and create a variable to store the data
+phoneRecords = phoneRegex_With3Groups.findall(resumeExample1)
+
+# Print to screen the output
+print(phoneRecords)
