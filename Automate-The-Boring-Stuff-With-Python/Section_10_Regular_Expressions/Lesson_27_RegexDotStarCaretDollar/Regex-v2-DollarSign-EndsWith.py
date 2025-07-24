@@ -6,11 +6,13 @@
 # import the Regex modole
 import re
 
-# Create a Caret Character Class to find a specific value at the start of a String
-beginsWithHelloRegex = re.compile(r'^Hello')
+# Create a Dollar Sign Character Class to find a specific value at the End of a String
+endsWithWorldRegex = re.compile(r'world!$')
 
 # Utilize re.search() to return a List of all the matches and create a variable to store the data
-caretValue = beginsWithHelloRegex.search('Hello there!')
+dollarSignReturnValue = endsWithWorldRegex.search('Hello world!')
+dollarSignNoReturnValue = endsWithWorldRegex.search('Hello world!asfdasdfasdf')
 
 # Print to screen the output of the Regex expressions
-print(caretValue)
+print(dollarSignReturnValue)
+print(dollarSignNoReturnValue)

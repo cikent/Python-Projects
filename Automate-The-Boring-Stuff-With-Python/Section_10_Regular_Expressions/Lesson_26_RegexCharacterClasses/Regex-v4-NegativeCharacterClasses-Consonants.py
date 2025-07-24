@@ -9,7 +9,7 @@
 # import the Regex modole
 import re
 
-# Create a Negative Character Class to find vowels: aeiouAEIOU
+# Create a Negative Character Class to find Consonants (i.e. NOT vowels: aeiouAEIOU)
 consonantsRegex = re.compile(r'[^aeiouAEIOU]')
 
 # Utilize re.findall() to return a List of all the matches and create a variable to store the data
