@@ -13,7 +13,8 @@ sampleText1 = 'Al, why does your programming book talk about RoboCop so much?'
 vowelNoCasingRegex = re.compile(r'[aeiou]')
 
 # Create a Custom Character Class to find vowels using the Ignore casing argument
-vowelCasingRegex = re.compile(r'[aeiou]', re.I)
+# vowelCasingRegex = re.compile(r'[aeiou]', re.I)
+vowelCasingRegex = re.compile(r'[aeiou]', re.IGNORECASE)
 
 # Utilize re.findall() to return a List of all the matches and create a variable to store the data
 vowelNoCasing = vowelNoCasingRegex.findall(sampleText1)

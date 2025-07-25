@@ -10,13 +10,13 @@
 import re
 
 # Declare String Variable
-message = 'Call me at 415-555-1011 tomorrow, or at 415-555-9999 for my office line.'
+voicemailMessage = 'Call me at 415-555-1011 tomorrow, or at 415-555-9999 for my office line.'
 
 # Declare a variable representing the text pattern we're searching for (i.e. a phone number)
 phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
 
 # Utilize the regex expression search method to create a new Match Object variable IF a pattern match is found
-mo = phoneNumRegex.search(message)
+mo = phoneNumRegex.search(voicemailMessage)
 
 # Print to UI the 1st occurrence of any Match Objects variables found
 print(mo.group())
