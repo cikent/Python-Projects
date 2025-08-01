@@ -8,7 +8,10 @@
 # The shelve.open() function returns a dictionary-like shelf value.
 
 # Import relevant modules
-import shelve
+import os, shelve
+
+# Change the working directory
+os.chdir('C:\\Development\\Python-Projects\\Automate-The-Boring-Stuff-With-Python\\Section_11_Files\\Lesson_31_ReadingWritingPlaintextFiles')
 
 # Create a Binary Shelf File Object using the open() method via the local Current Working Directory
 shelfFile = shelve.open('mydata')
