@@ -12,7 +12,7 @@ import logging
 # Create the basic Logging Setup
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Disable the Logging
+# Disable the Logging at the CRITICAL or lower levels
 logging.disable(logging.CRITICAL)
 
 # Create Debug Log Messages:
