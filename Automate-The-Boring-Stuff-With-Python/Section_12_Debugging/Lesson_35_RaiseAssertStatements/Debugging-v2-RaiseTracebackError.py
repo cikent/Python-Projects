@@ -9,7 +9,7 @@ import traceback
 # TODO: # os.chdir() will change the current working directory.
 try:
     # This is the String that will be generated in the File
-    raise Exception('This is the error message.')
+    raise Exception('This is the Traceback Error message!')
 except:
     # Utilize open() to create a File and Append in the Current Working Directory (C:\Development\Python-Projects\Automate-The-Boring-Stuff-With-Python)
     errorFile = open('error_log.txt', 'a')
@@ -35,10 +35,10 @@ except:
 def boxPrint(Symbol, Width, Height):
     # 1st Exception: Ensure Symbol is 1 String length long
     if len(Symbol) != 1:
-        raise Exception('The "Symbol" value MUST be a String length EQUAL TO 1.')
+        raise Exception('Raise Exception Error: The "Symbol" value MUST be a String length EQUAL TO 1.')
     # 2nd Exception: Ensure Width and Height are 2 or higher
     if (Width < 2) or (Height < 2):
-        raise Exception('The "Width" and "Height" argument values MUST be GREATER THAN or EQUAL TO 2.')
+        raise Exception('Raise Exception Error: The "Width" and "Height" argument values MUST be GREATER THAN or EQUAL TO 2.')
     
     # Print the 1st Row based upon the Symbol and Width provided
     print(Symbol * Width)
