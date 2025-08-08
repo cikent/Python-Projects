@@ -10,10 +10,11 @@
 import logging
 
 # Create the basic Logging Setup
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+# Utilize filename= to create a File WITH a Relative File Path or Absolute File Path
+logging.basicConfig(filename='C:\\Development\\Python-Projects\\Automate-The-Boring-Stuff-With-Python\\Section_12_Debugging\\Lesson_36_Logging\\myProgramLog.txt', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Disable the Logging at the CRITICAL or lower levels
-logging.disable(logging.CRITICAL)
+# Disable the Logging at the CRITICAL level or lower
+# logging.disable(logging.CRITICAL)
 
 # Create Debug Log Messages:
 logging.debug('Start of program')

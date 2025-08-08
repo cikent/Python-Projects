@@ -11,8 +11,8 @@ try:
     # This is the String that will be generated in the File
     raise Exception('This is the Traceback Error message!')
 except:
-    # Utilize open() to create a File and Append in the Current Working Directory (C:\Development\Python-Projects\Automate-The-Boring-Stuff-With-Python)
-    errorFile = open('error_log.txt', 'a')
+    # Utilize open() to create a File; 1st argument = Relative File Path or Absolute File Path, 2nd argument = a for Append
+    errorFile = open('C:\Development\Python-Projects\Automate-The-Boring-Stuff-With-Python\Section_12_Debugging\Lesson_35_RaiseAssertStatements\\error_log.txt', 'a')
     # Write the Traceback Stack that caused the Error
     errorFile.write(traceback.format_exc())
     # Close the File Object
