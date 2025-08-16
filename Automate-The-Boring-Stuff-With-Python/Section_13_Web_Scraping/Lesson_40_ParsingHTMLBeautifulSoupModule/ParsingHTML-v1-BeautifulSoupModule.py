@@ -9,24 +9,28 @@
 # Import relelvant modules
 import bs4, requests
 
-# Add User Agent Header
-headers = {'User-Agent': 'Mozilla/5.0'}
+# Create ProductUrl variables to utilize and DEBUG
+toScrapProductUrl = str('https://books.toscrape.com/catalogue/category/books/science_22/index.html')
 
 # Create a function() to obtain the Price for the Automate the Boring Stuff with Python book
 def getAmazonPrice(productUrl):
-    res = requests.get(productUrl)
+    # Add User Agent Header
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
+    }
+    res = requests.get(productUrl, headers=headers)
     res.raise_for_status()
 
     # Create a Soup Object AND pass the html.parser as the 2nd argument to hide the warning
     soup = bs4.BeautifulSoup(res.text, 'html.parser')
     # Create an Element Selector for Price
-    elems = soup.select('#corePriceDisplay_desktop_feature_div > div.a-section.a-spacing-none.aok-align-center.aok-relative > span.aok-offscreen')
+    elems = soup.select('#default > div > div > div > div > section > div:nth-child(2) > ol > li:nth-child(4) > article > div.product_price > p.price_color')
     
     # Return the Price Element Text value
     return elems[0].text.strip()
     
 # Create a variable for the Price
-price = getAmazonPrice('https://www.amazon.com/Automate-Boring-Stuff-Python-Programming/dp/1593275994')
+price = getAmazonPrice(toScrapProductUrl)
 
 # Print to screen the Price value
 print('The price is ' + price)
