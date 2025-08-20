@@ -14,7 +14,7 @@ toScrapProductUrl = str('https://books.toscrape.com/catalogue/category/books/sci
 
 # Create a function() to obtain the Price for the Automate the Boring Stuff with Python book
 def getAmazonPrice(productUrl):
-    # Add User Agent Header
+    # Add User Agent Header to emulate a Real User to help bypass getting blocked
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
     }
