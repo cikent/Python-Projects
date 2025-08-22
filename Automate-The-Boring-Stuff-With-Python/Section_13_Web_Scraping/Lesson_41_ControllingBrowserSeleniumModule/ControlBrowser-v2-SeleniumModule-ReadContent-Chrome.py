@@ -40,32 +40,15 @@ browser = webdriver.Chrome(service=s, options=chrome_options)
 # Navigate to a Site:
 browser.get(testUrl)
 
-# Scroll to Element & Find the Table of Contents Introduction Hyperlink Element
-ActionChains(browser).move_to_element(WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.LINK_TEXT, "Introduction")))).perform()
-elemIntroduction = WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.LINK_TEXT, "Introduction")))
+# # Scroll to the Paragraph Text Element
+ActionChains(browser).move_to_element(WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#content > article > div > p:nth-child(14)")))).perform()
+elemParagraphText = WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#content > article > div > p:nth-child(14)")))
 
-# Click the Introduction Hyperlink Element
-elemIntroduction.click()
+# Verify the correct elemParagraphText Element Text is selected by Selenium
+print(elemParagraphText.text)
 
-# Navigate back to the Home page
-browser.get(testUrl)
+# Grab the HTML Body of the Entire Webpage
+elemHtmlEntirePage = WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'html')))
 
-# Find Home page Navbar Hamburger menu
-elemHamMenu = WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "body > nav > div > button > span")))
-
-# Click the elemHamMenu Hyperlink Element
-elemHamMenu.click()
-
-# Find the Search Field & Send Keys
-elemSearchField = WebDriverWait(browser, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#navbarSupportedContent > form > input.form-control.me-2")))
-elemSearchField.send_keys('zophie')
-
-# Submit the search term
-elemSearchField.submit()
-
-# Navigate the browser further
-browser.back()
-browser.forward()
-browser.refresh()
-browser.implicitly_wait(30)
-browser.quit()
+# Verify the correct elemHtmlEntirePage Element Text is selected by Selenium
+print(elemHtmlEntirePage.text)
