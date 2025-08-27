@@ -3,7 +3,7 @@
 # A Page object can be obtained from the PDF object with the pages[0] method; getPage() is deprecated
 # The text from a Page object is obtained with the extract_text method, which can be imperfect; extractText() is deprecated
 # New PDFs can be made from PdfWriter(); PdfFileWriter() is deprecated
-# New pages can be appended to a writer object with the addPage() method.
+# New pages can be appended to a writer object with the add_page(page) method; addPage() is deprecated
 # Call the write() method to save its changes.
 
 # Import relevant modules
