@@ -15,13 +15,13 @@ conn.ehlo()
 conn.starttls()
 
 # Login to the Email Server; 1st Argument = Email Alias, 2nd Argument = Credentials
-conn.login(YOUR_GOOGLE_EMAIL, YOUR_GOOGLE_EMAIL_FAKE_APP_PASSWORD)         # Fake App Password
+# conn.login(YOUR_GOOGLE_EMAIL, YOUR_GOOGLE_EMAIL_FAKE_APP_PASSWORD)         # Fake App Password
 
 # Send a Test Email; 1st Argument = Sending Email Alias, 2nd Argument = Receiving Email Alias, 3rd Argument = Subject & Body
 sentFrom = YOUR_GOOGLE_EMAIL
 sentTo = sentFrom  #  Send it to self (as test)
 emailSubjectBody = 'Subject: So long... \n\nDear Chris, \nSo long, and thanks for all the fish.'
-conn.sendmail(sentFrom, sentTo, emailSubjectBody)
+# conn.sendmail(sentFrom, sentTo, emailSubjectBody)
 
 # Close the connection
 conn.quit()
@@ -36,4 +36,4 @@ filePath = os.getcwd()
 # print(filePath)
 
 # Print Verification Evidence
-print('Assume the Commented Out Code is enabled with a valid App Password provided... \nFor evidence, via Github, see the "SendEmail-Via-SMTP-Proof.jpg" file')
+print('Assume the Commented Out Code is enabled with a valid App Password provided... \nFor evidence, via Github, see the "SendEmail-Via-SMTP-Proof.jpg" file @ https://github.com/cikent/Python-Projects/blob/master/Automate-The-Boring-Stuff-With-Python/Section_15_Email/Lesson_46_SendingEmails/SendEmail-Via-SMTP-Proof.jpg')
