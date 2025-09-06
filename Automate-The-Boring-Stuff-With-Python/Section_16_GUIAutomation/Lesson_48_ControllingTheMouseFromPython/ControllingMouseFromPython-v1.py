@@ -56,3 +56,6 @@ pyautogui.moveRel(0, -100, duration=1)
 
 # Move the Mouse Coursor to a given XY Coordinate location; 1st Argument = X Coordinate, 2nd Argument = Y Coordinate, 3rd Argument = Duration
 pyautogui.click(116, 300, duration=1.5)
+
+# Via Terminal | PowerShell, utilize the pyautogui.displayMousePosition() function to dynamically and continously display the Cursor's current X & Y position
+# pyautogui.displayMousePosition()
